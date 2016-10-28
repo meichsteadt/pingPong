@@ -1,4 +1,4 @@
-_Ping Pong_
+# _Ping Pong_
 
 _This application will take an input from a user and then play a game of ping pong with it. (Displaying numbers up to said number with a little variation)_
 
