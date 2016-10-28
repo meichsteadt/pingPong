@@ -10,18 +10,18 @@ _Play some ping pong! This application will take a number and display all number
 
 ## Specifications
 
-*It can count up to the provided number
-  *Example input: 4
-  *Example output: [1,2,3,4]
-*It displays 'ping' on numbers divisible by 3
-  *Example input: 3 
-  *Example output: [1,2,"ping"] 
-*It displays 'pong' on numbers divisible by 5
-  *Example input: 5 
-  *Example output: [1,2,3,4,"pong"] 
-*It displays 'ping pong' on numbers divisible by 3 & 5
-  *Example input: 15 
-  *Example output: [1,2,"ping",4,"pong".... 13,14,"ping pong"] 
+* It can count up to the provided number
+  * Example input: 4
+  * Example output: [1,2,3,4]
+* It displays 'ping' on numbers divisible by 3
+  * Example input: 3 
+  * Example output: [1,2,"ping"] 
+* It displays 'pong' on numbers divisible by 5
+  * Example input: 5 
+  * Example output: [1,2,3,4,"pong"] 
+* It displays 'ping pong' on numbers divisible by 3 & 5
+  * Example input: 15 
+  * Example output: [1,2,"ping",4,"pong".... 13,14,"ping pong"] 
 
 
 ## Setup/Installation Requirements
