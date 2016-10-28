@@ -1,0 +1,36 @@
+body {
+  font-family: monospace;
+  text-align: center;
+  background-color: #034c0d;
+}
+
+li {
+  list-style: none;
+  font-size: 42px;
+  color: #fff;
+}
+
+.left {
+  margin-left: -99%;
+}
+
+.right {
+  margin-left: 90%;
+}
+
+.ball {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #fff;
+  margin-top: -10px;
+}
+
+.ball-right {
+  margin-left: 80%;
+}
+
+.ball-left {
+  margin-left: 20%;
+}
