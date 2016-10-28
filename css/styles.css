@@ -8,14 +8,16 @@ li {
   list-style: none;
   font-size: 42px;
   color: #fff;
+  margin: 0 auto;
+  text-shadow: 1px 1px 1px #000;
 }
 
 .left {
-  margin-left: -99%;
+  float: left;
 }
 
 .right {
-  margin-left: 80%;
+  float: right;
 }
 
 .ball {
@@ -24,36 +26,32 @@ li {
   border-radius: 20px;
   color: #fff;
   background-color: #fff;
-  margin-top: -40px;
+  margin-top: -45px;
 }
 
 .ball-right {
-  margin-left: 70%;
+  margin-left: -40px;
 }
 
 .ball-left {
-  margin-left: 20%;
+  margin-left: 100%;
 }
 
+.li-right {
+  position: relative;
+  right:-50px;
+}
 
-@media screen and (max-width: 762px) {
-  .right {
-    margin-left: 70%;
-  }
-  .ball-right {
-    margin-left: 60%;
-  }
+.li-left {
+  position: relative;
+  right: 50px;
 }
-@media screen and (max-width: 532px){
-  .ball-right {
-    margin-left: 55%;
-  }
+
+.outline {
+  border: 2px solid #fff;
+  display: none;
 }
-@media screen and (min-width: 982px){
-  .right {
-    margin-left: 90%;
-  }
-  .ball-right {
-    margin-left: 80%;
-  }
+.move {
+  animation: moveBall 5s linear infinite;
+  margin-top: 0px;
 }

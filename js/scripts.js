@@ -39,6 +39,7 @@ function pingPong(number) {
 $(function(){
   $('form').submit(function(event) {
     event.preventDefault();
+    $('.outline').show();
     $('#outputToUser').children().remove();
     var userInput = parseInt($('input#userInput').val());
     if(!userInput || userInput === 0) {
@@ -47,18 +48,21 @@ $(function(){
     else {
       pingPong(userInput).forEach(function(output) {
         if(output === "ping") {
-          $('#outputToUser').append('<li class="left">' + output + '</li><div class="ball ball-left"></div>');
+          $('#outputToUser').append('<li class="left">' + output + '<div class="ball ball-left"></div></li>');
+          $('#outputToUser').append('<li class="li-left">|</li>');
         }
         else if(output === "pong") {
-          $('#outputToUser').append('<li class="right">' + output + '</li><div class="ball ball-right"></div>');
+          $('#outputToUser').append('<li class="right">' + output + '<div class="ball ball-right"></div></li>');
+          $('#outputToUser').append('<li class="li-right">|</li>');
         }
         else if(output === "ping pong") {
-          $('#outputToUser').append('<li class="middle">' + output + '</li>');
+          $('#outputToUser').append('<li>' + output + '</li>');
+          $('#outputToUser').append('<li>|</li>');
         }
         else {
           $('#outputToUser').append('<li>' + output + '</li>');
+          $('#outputToUser').append('<li>|</li>');
         }
-        $('#outputToUser').append('<li>|</li>');
       });
     }
     $('input#userInput').val('');
