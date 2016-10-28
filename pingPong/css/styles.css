@@ -15,7 +15,7 @@ li {
 }
 
 .right {
-  margin-left: 90%;
+  margin-left: 80%;
 }
 
 .ball {
@@ -28,9 +28,32 @@ li {
 }
 
 .ball-right {
-  margin-left: 80%;
+  margin-left: 70%;
 }
 
 .ball-left {
   margin-left: 20%;
+}
+
+
+@media screen and (max-width: 762px) {
+  .right {
+    margin-left: 70%;
+  }
+  .ball-right {
+    margin-left: 60%;
+  }
+}
+@media screen and (max-width: 532px){
+  .ball-right {
+    margin-left: 55%;
+  }
+}
+@media screen and (min-width: 982px){
+  .right {
+    margin-left: 90%;
+  }
+  .ball-right {
+    margin-left: 80%;
+  }
 }
